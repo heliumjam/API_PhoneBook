@@ -29,7 +29,7 @@ public class GetAllContactsTests extends TestsBase {
         for(ContactDTO contactDTO : contacts.getContacts()){
             System.out.println(contactDTO.getId());
             System.out.println(contactDTO.getEmail());
-            System.out.println("===================================");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
         }
     }

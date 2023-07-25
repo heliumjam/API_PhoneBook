@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="okhttp.GetAllContactsTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-25T18:53:46" hostname="MIRI" time="1.002">
+  <properties/>
+  <testcase name="getAllContactsPositive" classname="okhttp.GetAllContactsTests" time="1.002"/>
+  <system-out><![CDATA[530773c9-65a2-4d74-a7f5-5e74dae3d1c4
+spider3144@mail.po
+===================================
+98487b5c-ba98-43f4-a0ea-71c1498d665c
+spider3147@mail.po
+===================================
+3eca52c5-be91-4e85-936c-df5ce8efe316
+spider3149@mail.po
+===================================
+7f8d2b90-8a41-4387-8615-c7a2283ecd7d
+spider3151@mail.po
+===================================
+cfaba006-3362-4428-abc0-b0416b6158cb
+spider3153@mail.po
+===================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
