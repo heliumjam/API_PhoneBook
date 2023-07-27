@@ -17,8 +17,8 @@ public class GetAllContactsTests extends TestsBase {
     public void getAllContactsPositive() throws IOException {
 
         Request request = new Request.Builder()
-                .url("https://contactapp-telran-backend.herokuapp.com/v1/contacts")
-                .addHeader("Authorization", TOKEN)
+                .url(URL_SWAG + "/v1/contacts")
+                .addHeader("Authorization", LOGIN_TOKEN)
                 .build();
 
         Response response = client.newCall(request).execute();

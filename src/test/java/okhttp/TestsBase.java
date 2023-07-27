@@ -12,7 +12,9 @@ public class TestsBase {
     Gson gson = new Gson();
     OkHttpClient client = new OkHttpClient();
 
-    String TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoiZG9tZXM3QG1haWwuY29tIiwiaXNzIjoiUmVndWxhaXQiLCJleHAiOjE2OTA5MTA5MTcsImlhdCI6MTY5MDMxMDkxN30.Jc4k5vcsakT5ssXMrZABS16-pSPc0BEqpwc4IZQEF_0";
+    String URL_SWAG ="https://contactapp-telran-backend.herokuapp.com";
+    String LOGIN_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoiZG9tZXM3QG1haWwuY29tIiwiaXNzIjoiUmVndWxhaXQiLCJleHAiOjE2OTA5MTA5MTcsImlhdCI6MTY5MDMxMDkxN30.Jc4k5vcsakT5ssXMrZABS16-pSPc0BEqpwc4IZQEF_0";
+
 
 
 }

@@ -1,40 +1,39 @@
 package okhttp;
 
-import com.google.gson.Gson;
 import dto.AuthRequestDTO;
 import dto.AuthResponseDTO;
 import dto.ErrorDTO;
-import okhttp3.*;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class LoginTests extends TestsBase{
+public class RegistrationTests extends TestsBase{
 
     @Test
-    public void loginPositive() throws IOException {
-
+        public void registrationPositive() throws IOException {
+        int i = (int)((System.currentTimeMillis()/1000)%3600);
         AuthRequestDTO requestDTO = AuthRequestDTO.builder()
-                .username("domes7@mail.com")
+                .username("domesapi"+i+"@mail.com")
                 .password("123456Aa$")
                 .build();
 
-    RequestBody requestBody = RequestBody.create(gson.toJson(requestDTO),JSON);
+        RequestBody requestBody = RequestBody.create(gson.toJson(requestDTO),JSON);
 
         Request request = new Request.Builder()
-                .url(URL_SWAG+"/v1/user/login/usernamepassword")
+                .url(URL_SWAG +"/v1/user/registration/usernamepassword")
                 .post(requestBody)
                 .build();
 
         Response response = client.newCall(request).execute();
 
-        if (response.isSuccessful()){
-         AuthResponseDTO responseDTO = gson.fromJson(response.body().string(), AuthResponseDTO.class);
+        if(response.isSuccessful()) {
+            AuthResponseDTO responseDTO = gson.fromJson(response.body().string(), AuthResponseDTO.class);
             System.out.println(responseDTO.getToken());
             System.out.println("Response code is-> " +response.code());
-            ///LOGIN_TOKEN = responseDTO.getToken();
-           // System.out.println("TOKEN is-> " +LOGIN_TOKEN);
             Assert.assertTrue(response.isSuccessful());
         }
         else{
@@ -46,7 +45,4 @@ public class LoginTests extends TestsBase{
 
     }
 
- }
-
-
-
+}
