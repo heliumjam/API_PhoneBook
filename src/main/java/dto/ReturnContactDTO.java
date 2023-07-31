@@ -10,7 +10,11 @@ import lombok.ToString;
 @ToString
 @Builder
 
-public class ContactDTO {
+public class ReturnContactDTO {
+
+    // Get all contacts
+    //Return Contacts Dto
+
     /*
     {
   "id": "string",

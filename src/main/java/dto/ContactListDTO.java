@@ -13,6 +13,23 @@ import java.util.List;
 
 
 public class ContactListDTO {
-    List<ContactDTO> contacts;
+    /*
+    Get all contacts response 200:
+
+    {
+  "contacts": [
+    {
+      "id": "string",
+      "name": "string",
+      "lastName": "string",
+      "email": "string",
+      "phone": "6353770506394",
+      "address": "string",
+      "description": "string"
+    }
+  ]
+}
+     */
+    List<ReturnContactDTO> contacts;
 
 }

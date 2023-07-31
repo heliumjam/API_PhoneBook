@@ -9,11 +9,14 @@ import lombok.ToString;
 @Getter
 @ToString
 @Builder
-public class AddContactResponseDTO {
-    /*
-    {
-  "message": "string"
-}
-     */
+public class ContactResponseDTO {
+/*
+add new contact response 200
+update contact response 200
+
+Return ResponseMessageDto:
+ */
+
     String message;
+
 }

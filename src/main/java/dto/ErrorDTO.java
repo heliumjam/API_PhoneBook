@@ -11,6 +11,9 @@ import lombok.ToString;
 @Builder
 public class ErrorDTO {
     /*
+
+Any format error
+
     {
   "timestamp": "2023-07-25T16:08:10.797Z",
   "status": 0,
@@ -19,9 +22,11 @@ public class ErrorDTO {
   "path": "string"
 }
      */
+    String timestamp;
     int status;
     String error;
-    String message;
+    Object message;
+    String path;
 
 
 }

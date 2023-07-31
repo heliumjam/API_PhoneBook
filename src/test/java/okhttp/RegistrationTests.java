@@ -3,6 +3,7 @@ package okhttp;
 import dto.AuthRequestDTO;
 import dto.AuthResponseDTO;
 import dto.ErrorDTO;
+import helpers.Helper;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class RegistrationTests extends TestsBase{
+public class RegistrationTests implements Helper {
 
     @Test
         public void registrationPositive() throws IOException {
@@ -24,7 +25,7 @@ public class RegistrationTests extends TestsBase{
         RequestBody requestBody = RequestBody.create(gson.toJson(requestDTO),JSON);
 
         Request request = new Request.Builder()
-                .url(URL_SWAG +"/v1/user/registration/usernamepassword")
+                .url(BASE_URI +"/v1/user/registration/usernamepassword")
                 .post(requestBody)
                 .build();
 

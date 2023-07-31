@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="okhttp.RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-27T15:20:30" hostname="MIRI" time="1.118">
-  <properties/>
-  <testcase name="registrationPositive" classname="okhttp.RegistrationTests" time="1.118"/>
-  <system-out><![CDATA[eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoiZG9tZXNhcGkxMjMwQG1haWwuY29tIiwiaXNzIjoiUmVndWxhaXQiLCJleHAiOjE2OTEwNzEyMzIsImlhdCI6MTY5MDQ3MTIzMn0.syZSbnJpysmQood5toF9pL3PQS--ufZbctNe58trK-M
-Response code is-> 200
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
