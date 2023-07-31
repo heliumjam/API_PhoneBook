@@ -65,6 +65,4 @@ public class DeleteContactByIDTests implements Helper {
 
     }
 
-
-//TODO
 }
