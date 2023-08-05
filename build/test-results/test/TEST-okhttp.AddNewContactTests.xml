@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="okhttp.AddNewContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-03T22:01:08" hostname="MIRI" time="1.287">
+  <properties/>
+  <testcase name="addNewContactResponse" classname="okhttp.AddNewContactTests" time="1.287"/>
+  <system-out><![CDATA[Contact was added! ID: 9aa66f1c-5e52-4214-a85a-dbc08bb911ee
+Response code is-> 200
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
